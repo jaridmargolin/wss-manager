@@ -2,7 +2,7 @@
   "name": "wss-manager",
   "description": "A controllable Websocket Server interface used for testing",
   "author": "Jarid Margolin <jarid@firstopinionapp.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/firstopinion/wss-manager",
   "license": "MIT",
   "repository": {
