@@ -1,0 +1,36 @@
+{
+  "name": "wss-manager",
+  "description": "A controllable Websocket Server interface used for testing",
+  "author": "Jarid Margolin <jarid@firstopinionapp.com>",
+  "version": "0.0.1",
+  "homepage": "https://github.com/firstopinion/wss-manager",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstopinion/wss-manager"
+  },
+  "bugs": {
+    "url": "https://github.com/firstopinion/wss-manager/issues"
+  },
+  "scripts": {
+    "test": "standard && mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text npm test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "main": "lib/wss-manager.js",
+  "bin": "bin/wss-manager.js",
+  "dependencies": {
+    "class-methods": "^1.0.6",
+    "debug-prop": "0.0.1",
+    "hapi": "^16.4.3",
+    "lodash": "^4.17.4",
+    "p-defer": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "coveralls": "^2.11.15",
+    "mocha": "^3.1.2",
+    "nyc": "^11.0.2",
+    "standard": "^10.0.1"
+  }
+}
