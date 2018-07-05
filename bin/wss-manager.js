@@ -5,15 +5,14 @@
  * -------------------------------------------------------------------------- */
 
 // lib
-const api = require('../lib/api')
+const Api = require('../lib/api')
 const WSSManager = require('../lib/wss-manager')
 
 /* -----------------------------------------------------------------------------
  * api
  * -------------------------------------------------------------------------- */
 
-api(new WSSManager()).start(__ => {
-  return process.send
-    ? process.send({ connected: true })
-    : null
-})
+const api = Api(new WSSManager())
+const send = process.send || (() => null)
+
+api.start().then(() => send({ connected: true }))

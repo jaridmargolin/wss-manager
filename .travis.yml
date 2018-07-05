@@ -1,11 +1,7 @@
-sudo: required
-dist: trusty
-
 language: node_js
 node_js:
-- 8.0.0
-
-script: npm run coverage
-
+  - "10"
+  - "9"
+  - "8"
 after_success:
-  - npm run coveralls
+  - npm run publish-cov
