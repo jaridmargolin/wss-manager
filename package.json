@@ -17,10 +17,10 @@
     "view-cov": "opn ./coverage/lcov-report/index.html"
   },
   "dependencies": {
-    "class-methods": "^1.0.6",
+    "class-methods": "^1.0.10",
     "debug-prop": "0.0.1",
     "hapi": "^17.5.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.10",
     "p-defer": "^1.0.0"
   },
   "devDependencies": {
