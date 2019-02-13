@@ -19,7 +19,7 @@
   "dependencies": {
     "class-methods": "^1.0.10",
     "debug-prop": "0.0.1",
-    "hapi": "^17.5.2",
+    "hapi": "^18.0.0",
     "lodash": "^4.17.10",
     "p-defer": "^1.0.0"
   },
