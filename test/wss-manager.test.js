@@ -34,8 +34,11 @@ const confirmDisconnected = async ws => {
 
   try {
     await wsEvent(ws, 'message')
-    throw new Error('Message received')
-  } catch (e) {}
+  } catch (e) {
+    return undefined
+  }
+
+  throw new Error('Message received')
 }
 
 /* -----------------------------------------------------------------------------
@@ -44,7 +47,7 @@ const confirmDisconnected = async ws => {
 
 describe('WSSManager', function () {
   test('Should expose endpoints to manipulate websocket', async () => {
-    const api = Api(new WSSManager({ debug: true }))
+    const api = Api(new WSSManager({ debug: false }))
     await api.start()
 
     // start websocket
@@ -69,6 +72,8 @@ describe('WSSManager', function () {
 
     const stopRes = await axios.post('http://localhost:9997/stop')
     expect(stopRes.status).toBe(204)
+
+    await wsEvent(ws, 'close')
     expect(ws.readyState).toBe(WebSocket.CLOSED)
 
     await api.stop()
