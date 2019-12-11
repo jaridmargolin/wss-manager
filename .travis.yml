@@ -4,4 +4,4 @@ node_js:
   - "9"
   - "8"
 after_success:
-  - npm run publish-cov
+  - yarn publish-cov
