@@ -1,7 +1,17 @@
 language: node_js
 node_js:
-  - "10"
-  - "9"
-  - "8"
-after_success:
+  - '12'
+  - '10'
+script:
+  - yarn test
+  - yarn build
+after_script:
   - yarn publish-cov
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs
+  on:
+    branch: master
+    node_js: '12'

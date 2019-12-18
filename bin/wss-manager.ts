@@ -4,23 +4,20 @@
  * dependencies
  * -------------------------------------------------------------------------- */
 
-// 3rd party
-const { Server } = require('ws')
-
 // lib
-const BaseServer = require('./base-server')
-const WSConnection = require('./ws-connection')
+import WSSManager from '../lib/wss-manager'
 
 /* -----------------------------------------------------------------------------
- * WSServer
+ * api
  * -------------------------------------------------------------------------- */
 
-module.exports = class WSServer extends BaseServer {
-  createServer () {
-    return new Server(this.opts)
-  }
+const run = async () => {
+  const send = process.send || (() => null)
+  const manager = new WSSManager()
 
-  createConnection (socket) {
-    return new WSConnection(socket, { debug: this.opts.debug })
-  }
+  await manager.start()
+
+  send({ connected: true })
 }
+
+run()

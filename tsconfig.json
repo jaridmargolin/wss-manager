@@ -1,0 +1,11 @@
+{
+  "include": ["lib", "bin"],
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noEmit": true
+  }
+}
