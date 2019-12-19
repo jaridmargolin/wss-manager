@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 
 /* -----------------------------------------------------------------------------
@@ -12,12 +13,10 @@ import WSSManager from '../lib/wss-manager'
  * -------------------------------------------------------------------------- */
 
 const run = async () => {
-  const send = process.send || (() => null)
   const manager = new WSSManager()
-
   await manager.start()
 
-  send({ connected: true })
+  return process.send ? process.send({ connected: true }) : null
 }
 
 run()
