@@ -1,6 +1,6 @@
 {
   "name": "@inventory/wss-manager",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
   "description": "A controllable Websocket Server interface used for testing",
   "homepage": "https://github.com/jaridmargolin/wss-manager",
