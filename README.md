@@ -14,7 +14,7 @@
   </div>
   <div>
     <a href="https://npmjs.org/package/wss-manager">
-      <img src="https://img.shields.io/npm/v/wss-manager.svg" alt="NPM wss-manager package">
+      <img src="https://img.shields.io/npm/v/@inventory/wss-manager.svg" alt="NPM wss-manager package">
     </a>
     <a href="https://david-dm.org/jaridmargolin/wss-manager">
       <img src="https://david-dm.org/jaridmargolin/wss-manager.svg" alt="Dependency Status">
@@ -25,6 +25,9 @@
   </div>
 </div>
 <br>
+<div align="center">
+<a href="http://jaridmargolin.github.io/wss-manager">View Documentation</a>
+</div>
 
 ## License
 
