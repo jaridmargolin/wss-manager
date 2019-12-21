@@ -54,10 +54,6 @@ export default class WSSManager {
       host: 'localhost',
       routes: { cors: true }
     })
-  }
-
-  async start () {
-    await this._apiServer.start()
 
     this._apiServer.route({
       method: 'POST',
@@ -82,7 +78,10 @@ export default class WSSManager {
       path: `/unblock`,
       handler: this._handleUnblock
     })
+  }
 
+  async start () {
+    await this._apiServer.start()
     await this._wsServer.start()
     await this._linkServer.start()
   }

@@ -161,4 +161,22 @@ describe('WSSManager', function () {
 
     await manager.stop()
   })
+
+  test('Should be able to restart server', async () => {
+    const manager = new WSSManager({
+      wsMessageHandler: (data, reply) => reply(data + '5')
+    })
+
+    await manager.start()
+    await manager.stop()
+    await manager.start()
+
+    const ws = new WebSocket('ws://localhost:9996')
+    await waitForEvent(ws, 'open')
+
+    ws.send('1234')
+    expect(await new EventListener(ws, 'message')).toBe('12345')
+
+    await manager.stop()
+  })
 })
