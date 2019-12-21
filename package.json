@@ -24,7 +24,7 @@
     "view-docs": "open-cli ./docs/index.html"
   },
   "dependencies": {
-    "@inventory/async": "0.0.5",
+    "@inventory/async": "0.0.6",
     "@inventory/debug-prop": "0.0.3",
     "hapi": "^18.1.0",
     "lodash": "^4.17.15"
