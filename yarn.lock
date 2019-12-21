@@ -737,10 +737,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@inventory/async@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@inventory/async/-/async-0.0.5.tgz#ed5c7fa640015423bba7cbdd667b200cf2b257d5"
-  integrity sha512-tVvb6jDdeguDNU+KpodL/DKSE+FQIEI9jC4xYoSujtfHKIQg4tGxx/YSnpbkZVrDZjCVFyQrudk+We3VWBUlBg==
+"@inventory/async@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@inventory/async/-/async-0.0.6.tgz#630c82e8d9760eb5434c5b4aa38ea05612186ac7"
+  integrity sha512-Z+xqaf7UfHBJRNbe1yz300eW3GtsjvQUskwP+korjxvn75Ii7gcGuqhYZud67J7R12/BcejKwizIBq7ehQ1axw==
 
 "@inventory/debug-prop@0.0.3":
   version "0.0.3"
