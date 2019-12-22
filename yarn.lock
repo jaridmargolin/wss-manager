@@ -744,17 +744,20 @@
   dependencies:
     core-js "^3.6.0"
 
-"@inventory/debug-prop@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@inventory/debug-prop/-/debug-prop-0.0.3.tgz#9da83bdfdf3270d71b1352fd7c99f5b9d3a383e1"
-  integrity sha512-uICt4pHE6Aa0UEJYhJ3v49paCkHAxZuLhTRBxZV4fEdGsxEGFsngug5qJ1YLTFU5UyuzVxjFetklaMueLgG/Uw==
+"@inventory/debug-prop@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@inventory/debug-prop/-/debug-prop-0.0.4.tgz#2a862c6ebd9554a31fc85cc5fa5ca93727bc4569"
+  integrity sha512-68Q26Tmna1nnPdK46utkMkq9e1rxiXXTAaJu/9BJF4VLOosff5nzATZHVzMxiN9sjXnHeVx4KZVVWrT5fAKzBQ==
   dependencies:
-    "@inventory/debug" "^0.0.2"
+    "@inventory/debug" "^0.0.3"
+    core-js "^3.6.0"
 
-"@inventory/debug@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.2.tgz#20e1b36e9013782369125c6f2b382e9acdb1f7c9"
-  integrity sha512-lOsttlOk4AnDEL7x9NpVoB+dkxpbSFfbv9UY4GE7AK7vTKyz40toz37yeowq/UDe/FCwJdgJVqzYncn7bgklrA==
+"@inventory/debug@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@inventory/debug/-/debug-0.0.3.tgz#d31b5559acce813b0d5492cafadc1ff203bd857a"
+  integrity sha512-vE3Q+Uv4JTyOf9fGswlj/GaP56eMwTlQ9ckGkHnfO7qRrvScHE63IJam+i0rxynNxyQ6dzukG0SKQU4Nper1qA==
+  dependencies:
+    core-js "^3.6.0"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
