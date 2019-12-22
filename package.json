@@ -27,7 +27,8 @@
     "@inventory/async": "0.0.7",
     "@inventory/debug-prop": "0.0.4",
     "hapi": "^18.1.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "ws": "^7.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
