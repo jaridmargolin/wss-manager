@@ -737,10 +737,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@inventory/async@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@inventory/async/-/async-0.0.6.tgz#630c82e8d9760eb5434c5b4aa38ea05612186ac7"
-  integrity sha512-Z+xqaf7UfHBJRNbe1yz300eW3GtsjvQUskwP+korjxvn75Ii7gcGuqhYZud67J7R12/BcejKwizIBq7ehQ1axw==
+"@inventory/async@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@inventory/async/-/async-0.0.7.tgz#a03436fe723cc94ba6375c41523c5c9aea8c655e"
+  integrity sha512-Zo7BooBOwwp26HAmwAKMnTA00EKbm8wTBfT4dUU3WE9c+6qa5B7RCbxJqXr9V+xPQR4Pe7hWJPfSp2knXk/7mw==
+  dependencies:
+    core-js "^3.6.0"
 
 "@inventory/debug-prop@0.0.3":
   version "0.0.3"
@@ -2010,6 +2012,11 @@ core-js@^2.4.0:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+
+core-js@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.0.tgz#2b854e451de1967d1e29896025cdc13a2518d9ea"
+  integrity sha512-AHPTNKzyB+YwgDWoSOCaid9PUSEF6781vsfiK8qUz62zRR448/XgK2NtCbpiUGizbep8Lrpt0Du19PpGGZvw3Q==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
