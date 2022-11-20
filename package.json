@@ -58,6 +58,6 @@
     "portscanner": "2.2.0",
     "prettier-eslint-cli": "4.7.1",
     "typedoc": "0.15.8",
-    "typescript": "3.7.4"
+    "typescript": "3.9.10"
   }
 }
